@@ -1,0 +1,14 @@
+.menu_header{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    margin: 0 10px 0 10px;
+    border-radius: 0 0 20px 20px;
+}
+
+.menu_header_principal{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,66 @@
+.menu_logotipo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: hsla(0, 0%, 27%, 0.034);
+    border-radius: 50%;
+}
+.logotipo{
+    height: 100px;
+    width: 100px;
+    transition: .5s;
+}
+
+.logotipo:hover{
+    transform: scale(1.1);
+}
+
+#nome_site{
+    font-size: 30px;
+    color: #eee;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px #a253e2; 
+    text-decoration: none;
+    transition: .5s;
+}
+
+#nome_site:hover{
+    font-size: 30px;
+    color: #eee;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #a253e2; 
+    letter-spacing: 3px;
+}
+
+
+.link_nav_principal{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    color: #eee;
+    text-shadow: 0 0 3px #a253e2;
+    transition: .6s;
+}
+
+.link_nav_principal:hover{
+    text-shadow: 0 0 15px #a253e2;
+    text-decoration:underline;
+    color: #fff;
+}
+
+.link_nav_principal-1{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    color: #eee;
+    text-shadow: 0 0 3px #a253e2;
+    transition: .6s;
+}
+
+.link_nav_principal-1:hover{
+    text-shadow: 0 0 15px #a253e2;
+    text-decoration:underline;
+    color: #fff;
+}

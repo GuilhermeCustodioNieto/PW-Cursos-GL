@@ -1,0 +1,14 @@
+{% extends "gl_cursos_default/base.html" %}
+
+{% block content %}
+
+    <form action="{% url 'users:register' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <button type="submit">register</button>
+        <input type="hidden" name="next" value="{% url 'gl_cursos_default:index' %}">
+
+
+    </form>
+{% endblock content %}

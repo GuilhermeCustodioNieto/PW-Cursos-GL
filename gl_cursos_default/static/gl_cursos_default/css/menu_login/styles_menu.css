@@ -1,0 +1,82 @@
+/* menu login */
+
+#menu_login{ /* Imagem do menu principal */
+    background-image: url('../img/Stars_Down.gif');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+} 
+
+.menu_header_login{ /* Menu semi invisivel do cabeçalho */
+    background-color: #0000001c;
+    border-radius: 0 0 5px 5px;
+    margin: 0 15px 0 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu_nav_login{ /* menu do "Quem somos?" */
+   text-align: end; 
+   margin-left: 10px;
+}
+
+.link_login{ /* Estilo do "Quem somos?" */
+    padding: 12px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #eee;
+    text-shadow: 0 0 10px #111;
+    transition: .5s;
+}
+
+.link_login:hover{ 
+    transition: .2s;
+    text-shadow: 0 0 15px #fff;
+}
+
+.spn-1{  /* estilo do copy& */
+    color: #eee;
+    text-shadow: 0 0 5px #111;
+    font-size: 12px;
+}
+
+.link_cadastro-1{ /* estilo do link do GITHUB e REPLIT Lucas e Guilherme*/
+    color: #844db1;
+    font-size: 12px;
+    text-shadow: 0 0 5px #111;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.link_cadastro-1:hover{ 
+    text-shadow: 0 0 5px #844db1; 
+    transition: .5s;
+}
+
+/* STAR EFEITO */ 
+
+@keyframes star {
+    0%{
+        opacity: 0.75;
+        transform: translateY(-200px);
+    }
+    100%{
+        opacity: 0.5;
+        transform: translateY(200px);
+    }
+}
+
+.star{
+    font-size: 15px;
+    color: #3f1780;
+    text-shadow: 0 0 10px #a94db1;
+    animation: star 5s infinite alternate;
+}
+
+.star-2{
+    font-size: 15px;
+    color: #3f1780;
+    text-shadow: 0 0 10px #a94db1;
+    animation: star 5s infinite alternate-reverse;
+}
