@@ -1,0 +1,11 @@
+.menu_logotipo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.logotipo{
+    height: 120px;
+    width: 120px;
+    position: relative;
+}

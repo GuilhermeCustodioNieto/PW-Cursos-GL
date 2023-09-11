@@ -1,0 +1,1 @@
+web: gunicorn CursosGL.wsgi --log-file -
