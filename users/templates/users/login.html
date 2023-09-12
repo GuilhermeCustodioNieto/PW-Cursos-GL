@@ -41,18 +41,39 @@
             <div class="conteudo_login">
                 {% block content %}
 
+                <h2 id="Nome">LOGIN:</h2>
+                <br>
                 {% if form.errors %}
                 <p>Your username and password didn't match. Please try again</p>
                 {% endif %}
 
                 <form class="form_login" action="{% url 'users:login' %}" method="post">
                     {% csrf_token %}
+                    
+                    
+                    <div class="input-container">
+                        <label for="" class="efeito_label_login"><i class='bx bx-envelope'></i> </label>
+                        <input type="{{ form.username.field.widget.input_type }}" name="{{ form.username.name }}"
+                            id="id_username" class="input-style" value="{{ form.username.value }}">
+                    </div>
+                    
+                    <br>
+                    
 
-                    {{ form.as_p }}
+                    <div class="input-container">
+                        <label for="" class="efeito_label_login"><i class='bx bx-lock'></i> </label>
+                        <input type="{{ form.password.field.widget.input_type }}" name="{{ form.password.name }}"
+                            id="id_password" class="input-style" value="{{ form.password.value }}">
+                    </div>
 
-                    <input type="submit" value="Hello">
-                    <input type="hidden" name='next' value="{% url 'gl_cursos_default:index' %}">
+                    <br>
+
+                    <div class="submit-login">
+                        <input type="submit" value="Acessar" class="btn_login">
+                        <input type="hidden" name='next' value="{% url 'gl_cursos_default:index' %}">
+                    </div>
                 </form>
+                
                 {% endblock content %}
 
                 <span class="spn">Ainda não criou uma conta?<a href="#" class="link_cadastro"> Cadastre-se</a></span>

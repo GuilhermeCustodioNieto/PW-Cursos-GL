@@ -18,15 +18,22 @@
     align-items:center;
 }
 
+.submit-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .conteudo_login{
     position:static;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
-.efeito_label_login{
+.efeito_label_login{    
     color: #eee;
     text-shadow: 0 0 10px #919191;
 }
@@ -50,10 +57,11 @@
     box-shadow: 0 0 10px #111;
     padding: 10px;
     transition: .5s;
+    
 }
 
 .btn_login:hover{
-    color: #0f0f0f;
+    color: #0f0f0f; 
     background-color: #bbbbbbc5;
     box-shadow: 0 0 10px #eee;
     transition: .5s;
@@ -76,17 +84,17 @@
     transition: .5s;
 }
 
-.form_login input{
+.input-style {
     background-color: #333;
     color: #eee;
     text-shadow: 0 0 5px #111;
     padding: 2px;
     border-radius: 10px;
-    border: 2px solid #0f0f0f;   
-    box-shadow:0 0 10px #111;
+    border: 2px solid #0f0f0f;
+    box-shadow: 0 0 10px #111;
 }
 
-#id_username::selection, #Senha::selection{
+.input-container::selection {
     background-color: #222;
     padding: 2px;
     border-radius: 10px;
@@ -102,4 +110,13 @@
 
 .img_login{
     scale: 0.9;
+}
+
+
+@media (max-width: 600px){
+    .login_base{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
