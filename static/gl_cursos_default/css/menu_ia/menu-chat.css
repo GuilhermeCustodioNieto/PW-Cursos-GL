@@ -1,0 +1,140 @@
+/*div do card geral*/
+
+.chat {
+    width: 75%;
+    border: #8706C5 solid 1px;
+    border-radius: 7px;
+    background: #242020;
+    display: flex;
+			 flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+    
+}
+
+/*div geral do form*/
+
+.form-ia{
+    
+    padding: 10px 5px;
+				  display: flex;
+				  justify-content: space-around;
+    /*align-self:flex-end;
+*/
+    
+}
+
+
+#form-ia {
+				  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#input-text{
+    width: 300px;
+    background: #333333;
+    border: #3D1FDE 2px solid;
+    height: 20px;
+    border-radius: 7px;
+
+    color: #B5B5B5;
+    padding-left: 10px;
+			 margin-right: 20px;
+			 box-shadow: 0 0 5px #331d39;
+				  
+}
+
+#input-text:focus{
+    background: #333333;
+}
+
+#submit-button{
+    box-shadow: 0 0 5px #33139;
+    background: #333333;
+    border: #3D1FDE 2px solid;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+
+    background-image: url('../img/icon-search.png');
+				  background-repeat: no-repeat;
+				  background-position: center;
+}
+
+#card-chat{
+				background: #666;
+				
+				height: 2em;
+				
+				margin: 0px 0px;
+				border-radius: 7px;
+				padding: 5px;
+				
+				width: 6em;
+				
+				margin: 0px 0.3em;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				
+				box-shadow: 0 0 3px #777;
+}
+
+.card-chat a{
+    color: #eee;
+			 font-size: 0.6em;
+			 text-align: center;
+			 text-decoration: none;
+}
+
+.dupla-card-chat{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+		
+		  
+		
+				width: 100%;
+				margin: 10px;
+}
+
+.cards-chat{
+				display: flex;
+				justify-content: space-evenly;
+				flex-direction: column;
+				align-items: center;
+
+}
+
+/*responsividade*/
+
+@media (max-width: 450px) {
+    .chat{
+        width: 100%;
+        margin-left: 7px;
+    }
+
+    #input-text{
+        width: 200px;
+    				  height: auto;
+    }
+				
+				  #submit-button{
+				  				padding: 15px;
+				  }
+}
+
+@media(min-width:451px) and (max-width: 650px) {
+    .chat{
+        width: 630px;
+        margin-left: 7px;
+    }
+
+    #input-text{
+        width: 300px;
+    }
+
+}
+

@@ -6,8 +6,8 @@
 
 .login_menu{
     position: relative;
-    width: 480px;
-    height: 480px;
+    width: 400px;
+    height: 400px;
     padding: 1.2rem;
     background: rgb(218,69,220);
     background: linear-gradient(332deg, rgba(218, 69, 220, 0.080) 0%,
@@ -18,22 +18,15 @@
     align-items:center;
 }
 
-.submit-login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .conteudo_login{
     position:static;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 
-.efeito_label_login{    
+.efeito_label_login{
     color: #eee;
     text-shadow: 0 0 10px #919191;
 }
@@ -57,11 +50,10 @@
     box-shadow: 0 0 10px #111;
     padding: 10px;
     transition: .5s;
-    
 }
 
 .btn_login:hover{
-    color: #0f0f0f; 
+    color: #0f0f0f;
     background-color: #bbbbbbc5;
     box-shadow: 0 0 10px #eee;
     transition: .5s;
@@ -84,17 +76,17 @@
     transition: .5s;
 }
 
-.input-style {
+#Email, #Senha{
     background-color: #333;
     color: #eee;
     text-shadow: 0 0 5px #111;
     padding: 2px;
     border-radius: 10px;
-    border: 2px solid #0f0f0f;
-    box-shadow: 0 0 10px #111;
+    border: 2px solid #0f0f0f;   
+    box-shadow:0 0 10px #111;
 }
 
-.input-container::selection {
+#Email::selection, #Senha::selection{
     background-color: #222;
     padding: 2px;
     border-radius: 10px;
@@ -105,9 +97,43 @@
     display: flex;
     background-color: #25252511;
     border-radius: 50%;
-    margin-right: 50px;
+    
 }
 
 .img_login{
     scale: 0.9;
+}
+
+@media (max-width: 700px){
+    .login_base{
+        /* width: 600px; */
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: space-around;
+        align-items: center;
+  		height: 1000px;
+    }
+    
+    .login_base * {
+        justify-self: center;
+    }
+
+    .box_img_login .conteudo_login, .login_menu{
+        width: 15px;    
+    }
+		
+		 #Nome {
+		 	font-size: 45px;
+		 }
+		
+		 #Email, #Senha {
+		 	width: 350px;
+		 	height: 40px;
+		 }
+		 .efeito_label_login{
+		 		 width: 4px;
+		 }
+	 	#spn-1, #link_cadastro-1{
+	 			 font-size: 20px;
+	 	}
 }

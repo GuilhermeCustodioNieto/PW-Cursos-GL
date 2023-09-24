@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icones e fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/styles_reset.css' %}">
+    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/menu_ia/ia_geral.css' %}">
+    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/menu_ia/lateral-bar.css' %}">
+    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/menu_ia/menu-chat.css' %}">
+    <title>IA de Ajuda</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <nav>
+            
+            <div class="lateral_bar">
+                <div class="icon-menu" id="icon-menu">
+                    <img src="../css/img/menu.png" alt="icone de menu">
+                </div>
+
+                <div class="new-chat">
+                    <a href="#">NOVA CONVERSA</a>
+                </div>
+    
+                <div class="user-infos">
+                    <div class="username">
+                        <h5>USERNAME</h5>
+                    </div>
+                    <div class="logout">
+                        <a href="#">LOGOUT</a>
+                    </div>
+                </div>
+            </div>
+    
+        </nav>
+
+        
+        <div class="chat">
+        		   <div class="cards-chat">
+        		   	  	<div class="dupla-card-chat">
+        		   	  			   <div class="card-chat" id="card-chat">
+        		   		  	  				  <a href="#">Me ajude a corrigir o erro no meu Java</a>
+        		   		      </div>
+        		   		      <div class="card-chat" id="card-chat">
+        		   		  	  	    <a href="#">Crie um código em JavaScript</a>
+        		   		      </div>
+        		   	  	</div>
+        		   		  <div class="cards-chat">
+        		   	  	<div class="dupla-card-chat">
+        		   	  			   <div class="card-chat" id="card-chat">
+        		   		  	  				  <a href="#">Me ensine POO em Java</a>
+        		   		      </div>
+        		   		      <div class="card-chat" id="card-chat">
+        		   		  	  	    <a href="#">Como alinhar uma div?</a>
+        		   		      </div>
+        		   	  	</div>
+        		   		 
+        		   </div>
+            <div class="form-ia">
+                <form action="#" method="post" id="form-ia">
+                    <input type="text" name="" id="input-text" placeholder="Pesquise algo!">
+                    <input type="submit" value="" src="../css/img/icon-search.png" id="submit-button">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

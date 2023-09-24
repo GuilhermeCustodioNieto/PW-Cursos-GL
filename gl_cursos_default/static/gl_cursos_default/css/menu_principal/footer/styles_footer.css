@@ -1,0 +1,28 @@
+.menu_footer{
+    background: rgb(17,17,17);
+    background: linear-gradient(180deg, rgba(17,17,17,1) 0%, rgb(12, 12, 12) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.retorno{
+    margin-top: 15px;
+    color: #eee;
+    transition: .5s;
+}
+
+.copy{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #eee;
+    padding: 1px;
+    font-size: 16px;
+}
+.retorno:hover{
+    transform: translateY(-5px);
+    color: #7f387c;
+    text-shadow: 0 0 15px #da90d5;
+}

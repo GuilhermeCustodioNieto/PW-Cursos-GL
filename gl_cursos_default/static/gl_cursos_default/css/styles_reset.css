@@ -5,3 +5,17 @@
     font-family: 'Bricolage Grotesque';
     font-size: 20px;
 }
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+*::selection{
+    background-color: #976394;
+}

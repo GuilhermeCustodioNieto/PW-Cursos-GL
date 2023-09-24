@@ -1,0 +1,22 @@
+body {
+    background-color: #3c3c3c;
+		  height: 100vh;
+		  margin: 0%;
+		  padding: 0%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    
+    
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat, .lateral_bar{
+    box-shadow: 0 0 5px #666 ;
+    margin: 10px 5px;
+}
+

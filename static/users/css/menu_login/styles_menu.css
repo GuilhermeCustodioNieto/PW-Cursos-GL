@@ -1,16 +1,10 @@
 /* menu login */
 
-
-
 #menu_login{ /* Imagem do menu principal */
-    background-image: url("{% static 'users/css/img/Stars_Down.gif' %}");
+    background-image: url('../img/Stars_Down.gif');
     background-size: cover;
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
 } 
 
 .menu_header_login{ /* Menu semi invisivel do cabeçalho */

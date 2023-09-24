@@ -1,0 +1,134 @@
+#propaganda{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Parte escrita */ 
+
+.p_qs{
+    color: #eee;
+    transition: .2s;
+    font-size: 17px;
+}
+
+.p_qs:hover{
+    text-shadow: 0 0 1px #df4ddc;
+}
+
+.quem_somos{
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    flex-direction: column;
+    padding: 12px;
+}
+
+/* Patrao */ 
+
+.dono{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.btn_patrao{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.patrao{
+    width: 500px;
+    height: 500px;
+    border-radius: 30% 50%;
+    box-shadow: 0 0 5px 2px #111;
+    transition: .5s;
+    background-image: url("../img/Patrao.jpg");
+    background-position: center;
+    background-size: cover;
+    filter:brightness(30%);
+    filter: blur(1px);
+}
+
+.patrao:hover{
+    filter: blur(0px);
+    border-radius: 40% 40%;
+    box-shadow: 0 0 5px 2px #333333;
+}
+
+.seja_bv{
+    color: #925290; 
+    text-shadow: 0 0 4px #6d2c6b;
+}
+
+.seja_bv::selection{
+    color: #fff;
+    text-shadow: 0 0 1px #eee;
+    background-color: #333333;
+}
+
+@media (max-width: 700px){
+
+    .p_qs{
+        color: #eee;
+        transition: .2s;
+        font-size: 14px;
+    }
+    
+    
+    .patrao{
+        width: 320px;
+        height: 320px;
+        border-radius: 30% 50%;
+        box-shadow: 0 0 5px 2px #111;
+        transition: .5s;
+        background-image: url("../img/Patrao.jpg");
+        background-position: center;
+        background-size: cover;
+        filter:brightness(30%);
+        filter: blur(1px);
+        margin-left: 10px;
+    }
+
+    .seja_bv{
+        font-size: 14px;
+        color: #925290; 
+        text-shadow: 0 0 4px #6d2c6b;
+    }
+}
+
+@media (max-width: 450px){
+
+    .p_qs{
+        color: #eee;
+        transition: .2s;
+        font-size: 12px;
+    }
+    
+    
+    .patrao{
+        width: 240px;
+        height: 240px;
+        border-radius: 30% 50%;
+        box-shadow: 0 0 5px 2px #111;
+        transition: .5s;
+        background-image: url("../img/Patrao.jpg");
+        background-position: center;
+        background-size: cover;
+        filter:brightness(30%);
+        filter: blur(1px);
+        margin-left: 10px;
+    }
+
+    .seja_bv{
+        font-size: 13px;
+        color: #925290; 
+        text-shadow: 0 0 4px #6d2c6b;
+    }
+    
+}

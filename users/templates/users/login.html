@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,33 +7,32 @@
     <!-- Icones e fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap" rel="stylesheet"> 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Icones e fontes -->
 
     {% load static %}
 
     <!--Css-->
-    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/styles_reset.css' %}">
-    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/menu_login/styles_login.css' %}">
-    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/menu_login/styles_menu.css' %}">
+    <link rel="stylesheet" href="{% static 'users/css/styles_reset.css' %}">
+    <link rel="stylesheet" href="{% static 'users/css/menu_login/styles_login.css' %}">
+    <link rel="stylesheet" href="{% static 'users/css/menu_login/styles_menu.css' %}">
     <!--Css-->
     <title>Pagina_Login</title>
 </head>
-
 <body id="menu_login">
 
     <!-- Cabeçalho -->
-    <header class="menu_header_login">
+    <header class="menu_header_login"> 
         <nav class="menu_nav_login">
-            <a href="#" class="link_login">Quem somos?</a>
+            <a href="./html/menu_principal.html#dev" class="link_login">Quem somos?</a>
         </nav>
     </header>
 
     <!--Menu Principal do Login-->
-    <main class="login_base">
+    <main class="login_base">  
         <div class="box_img_login">
-            <img src="{% static 'gl_cursos_default/css/img/Estudando_LOGIN.png' %}" alt="estudando" class="img_login">
+            <img src="{% static 'users/css/img/Estudando_LOGIN.png' %}" alt="estudando" class="img_login">
         </div>
         <section class="login_menu">
             <div class="star"><i class='bx bxs-star bx-spin'></i></div>
@@ -70,7 +68,7 @@
 
                     <div class="submit-login">
                         <input type="submit" value="Acessar" class="btn_login">
-                        <input type="hidden" name='next' value="{% url 'gl_cursos_default:index' %}">
+                        <input type="hidden" name='next' value="{% url 'gl_cursos_default:menu_principal' %}">
                     </div>
                 </form>
                 
@@ -89,7 +87,6 @@
     <footer>
 
     </footer>
-
+    
 </body>
-
 </html>

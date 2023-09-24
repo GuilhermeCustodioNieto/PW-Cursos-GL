@@ -4,8 +4,6 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth import logout, login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 
-
-
 # Create your views here.
 
 def logout_views(request):

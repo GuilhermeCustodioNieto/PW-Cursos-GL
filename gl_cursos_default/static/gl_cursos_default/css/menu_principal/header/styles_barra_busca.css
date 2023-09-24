@@ -1,3 +1,5 @@
+
+
 .barra_busca{
     position: absolute;
     display: flex;
@@ -6,7 +8,7 @@
     background-color: #333;
     height: 60px;
     border-radius: 50px;
-    box-shadow: 0 0 8px #111;
+    box-shadow: 0 0 12px #111;
 }
 
 .input_barra_busca{
@@ -17,7 +19,7 @@
     color: #eee;
     line-height: 40px;
     width: 0;
-    transition: .8s;
+    transition: .5s;
 }
 
 .btn_barra_busca{
@@ -30,7 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .8s;
+    transition: .5s;
 }
 
 .barra_busca:hover > .input_barra_busca{
@@ -43,11 +45,98 @@
 }
 
 ::-webkit-input-placeholder{
-    color: #87CEEB;
+    color: #eee;
+    text-shadow: 0 0 2px #a253e2;
 }
 
 
 .input_barra_busca::selection{
     background-color: #B0C4DE;
     color: #222;
+}
+
+
+@media (max-width: 700px){
+    .barra_busca{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        height: 52px;
+        border-radius: 50px;
+        box-shadow: 0 0 9px #111;
+    }
+    
+    .input_barra_busca{
+        outline: none;
+        border: none;
+        background: none;
+        font-size: 16px;
+        color: #eee;
+        line-height: 40px;
+        width: 0;
+        transition: .5s;
+    }
+    
+    .btn_barra_busca{
+        height: 52px;
+        width: 52px;
+        border-radius: 50%;
+        border:1px solid #333;
+        background-color: #333;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+    }
+    
+    .barra_busca:hover > .input_barra_busca{
+        width: 130px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .barra_busca{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        height: 52px;
+        border-radius: 50px;
+        box-shadow: 0 0 9px #111;
+    }
+    
+    .input_barra_busca{
+        outline: none;
+        border: none;
+        background: none;
+        font-size: 16px;
+        color: #eee;
+        line-height: 40px;
+        width: 110px;
+        padding: 5px;
+        transition: .5s;
+    }
+    
+    .btn_barra_busca{
+        height: 52px;
+        width: 52px;
+        border-radius: 50%;
+        border:1px solid #333;
+        background-color: #333;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+    }
+    
+    .barra_busca:hover > .input_barra_busca{
+        width: 110px;
+        padding: 0 10px;
+    }
 }

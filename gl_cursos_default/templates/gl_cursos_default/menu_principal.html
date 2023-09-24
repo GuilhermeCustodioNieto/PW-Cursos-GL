@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importação ICON e FONTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Phudu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+    {% load static %}
+    
+    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/styles_reset.css' %}">
+    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/menu_principal/menu/styles_curso.css' %}">
+
+    <!-- CSS HEADER -->
+    <link rel="stylesheet" href="{% static '/css/menu_principal/header/styles_barra_busca.css' %}">
+    <link rel="stylesheet" href="{% static  'gl_cursos_default/css/menu_principal/header/styles_header.css' %}">
+    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/menu_principal/header/styles_logotipo.css' %}">
+    
+    <!-- CSS FOOTER -->
+    <link rel="stylesheet" href="{% static 'css/menu_principal/footer/styles_footer.css' %}">
+
+    <!-- CSS MENU -->
+    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/menu_principal/menu/styles_chat.css' %}">
+    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/menu_principal/menu/styles_propagandas.css' %}">
+    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/menu_principal/styles_header.css' %}">
+    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/menu_principal/styles_patrao.css' %}">
+    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/menu_principal/menu/styles_chat.css' %}">
+    <link rel="stylesheet" href="{% static 'gl_cursos_default/css/menu_principal/styles_dev.css' %}">
+
+    <title>Menu Principal</title>
+</head>
+
+<body class="menu_principal">
+
+    <header class="menu_header">
+        
+        <div class="menu_header_principal">
+                <a href="{% url 'gl_cursos_default:menu_principal' %}" id="nome_site">
+                    <img src="{% static 'gl_cursos_default/css/img/Logotipo.png' %}" alt="Logotipo" id="logo"></a>
+            <div class="menu_barra">
+                <div class="barra_busca">
+                    <input type="text" placeholder="Pesquisar" class="input_barra_busca">
+                    <a href="#" class="btn_barra_busca"> 
+                        <img src="{% static 'gl_cursos_default/css/img/Lupa.svg' %}" alt="Lupa de Pesquisa" height="20px" width="20px">
+                    </a>
+                </div>
+            </div>
+           
+            <nav class="menu_nav_principal">
+                <a href="{% url 'gl_cursos_default:menu_principal' %}" class="link_nav_principal">Home</a>
+                <a href="#" class="link_nav_principal">Contato</a>
+                <a href="#propaganda" class="link_nav_principal">Quem sou?</a>
+            </nav>
+                
+        </div>
+    </header>
+   
+    <main>
+        <section class="slogan"> 
+            <h2>Sobre os cursos do Dev-Desing</h2>
+            <h3>Confira nossos cursos e as metodologias de ensinos</h3>
+            <a href="#cursos" class="link_slogan">Confira os cursos agora<i class='bx bxs-right-arrow'></i></i></a>
+        </section>
+
+        <h2>Cursos</h2>
+        <section id="cursos">
+            <div class="card_curso">
+                <h2 class="nome_curso">Front-End</h2>
+                <img src="{% static 'gl_cursos_default/css/img/Front.png' %}" alt="Front-End" id="front_img">
+                <h3 class="nome_curso">HTML, CSS E JS</h3>
+                <ul class="lista_curso">
+                    <li class="item_curso">HTML Semantico</li>
+                    <li class="item_curso">CSS basico</li>
+                    <li class="item_curso">CSS Layout</li>
+                    <li class="item_curso">JS Basico</li>
+                    <li class="item_curso">JS Eventos</li>
+                    <li class="item_curso">JS React</li>
+                </ul>
+                <a href="{% url 'gl_cursos_default:curso_front' %}" class="btn_curso">Acessar Curso</a>
+            </div>
+
+            <div class="card_curso-2">
+                <h2 class="nome_curso">Back-End</h2>
+                <img src="{% static 'gl_cursos_default/css/img/Back.png' %}" alt="Back-End" id="back_img">
+                <h3 class="nome_curso">Java</h3>
+                <ul class="lista_curso">
+                    <li class="item_curso">Algoritmo</li>
+                    <li class="item_curso">Iniciando no Java</li>
+                    <li class="item_curso">Variaveis e Constantes</li>
+                    <li class="item_curso">Tomada de Decisão</li>
+                    <li class="item_curso">Laço de Repetição</li>
+                    <li class="item_curso">Java Objetos</li>
+                </ul>
+                <a href="{% url 'gl_cursos_default:curso_back' %}" class="btn_curso">Acessar Curso</a>
+            </div>
+        </section>
+
+
+        <br>
+
+        <section id="propaganda">
+            <h2 class="titulo_qs">Quem Sou?</h2>
+            <div class="dono">
+                <div class="btn_patrao">
+                    <div class="patrao"></div>
+                </div>
+                
+                <div class="quem_somos">
+                    <div class="texto_qs">
+                        <p class="p_qs">
+                            Moises a resposta do nome por trás da DEV-DESING, Dono de 90% da empresa <br> <br> <br> <br>
+                            Desenvolvedor Full-Stack Diploma de Ciencia de Dados<br> <br> <br> <br>
+                            Principal Gerenciador do Site Dev-Desing <span class="seja_bv">Seja Bem Vindo!</span>
+                       </p>
+                    </div>
+                </div>
+                   
+                
+            </div>
+
+        </section>
+
+        <br>
+
+        <section class="chat">
+            <h2>Chat IA</h2>
+            <h3 class="chat_aviso">Alguma duvida pendente? Retire ela agora mesmo</h3>
+            <a href="{% url 'gl_cursos_default:inteligencia_artificial' %}" class="btn_chat">Abrir Novo Chat</a>
+        </section>
+
+        <h2>Desenvolvedores</h2>
+        <section id="dev">
+            <div class="card_dev">
+                <div id="img_dev"></div>
+                <h2 class="nome_dev">Guilherme Custodio Nieto</h2>
+                <ul class="nav_dev">
+                    <li class="dev_letra">Developer Back End <i class='bx bxl-java' ></i></li>
+                    <li class="dev_letra">Diploma de Ciencia de dados <i class='bx bxs-graduation'></i></li>
+                    <li class="dev_letra">Especialização Python <i class='bx bxl-python'></i></li>
+                </ul>
+                <nav class="redes_dev">
+                    <a href="https://instagram.com/guilherme_nieto?igshid=OGQ5ZDc2ODk2ZA==" class="rede"><i class='bx bxl-instagram-alt' style="font-size: 25px;"></i></a>
+                    <a href="https://www.linkedin.com/in/guilherme-cust%C3%B3dio-nieto" class="rede"><i class='bx bxl-linkedin' style="font-size: 25px;"></i></a>
+                    <a href="https://github.com/GuilhermeCustodioNieto" class="rede"><i class='bx bxl-github' style="font-size: 25px;"></i></a>
+                </nav>
+
+                <a href="" class="portfolio">Portfólio</a>
+            </div>
+
+            <div class="card_dev">
+                <div id="img_dev-2"></div>
+                <h2 class="nome_dev">Lucas Caribé Araújo</h2>
+                <ul class="nav_dev">
+                    <li class="dev_letra">Developer Front End <i class='bx bxl-java' ></i></li>
+                    <li class="dev_letra">Diploma Faculdade de ADS <i class='bx bxs-graduation'></i></li>
+                    <li class="dev_letra">Especialização React <i class='bx bxl-react'></i></li>
+                </ul>
+                <nav class="redes_dev">
+                    <a href="#" class="rede"><i class='bx bxl-instagram-alt' style="font-size: 25px;"></i></a>
+                    <a href="#" class="rede"><i class='bx bxl-linkedin' style="font-size: 25px;"></i></a>
+                    <a href="#" class="rede"><i class='bx bxl-github' style="font-size: 25px;"></i></a>
+                </nav>
+
+                <a href="" class="portfolio">Portfólio</a>
+            </div>
+        </section>
+
+        
+        
+    </main>
+
+    <footer class="menu_footer">
+        <p class="copy">Desenvolvido por Guilherme e Lucas &copy;</p>
+        <a href="{% url 'gl_cursos_default:menu_principal' %}" class="retorno"><i class='bx bx-up-arrow-alt'></i></a>
+    </footer>
+
+
+</body>
+</html>

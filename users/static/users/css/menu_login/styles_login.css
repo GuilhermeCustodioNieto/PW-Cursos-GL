@@ -11,14 +11,14 @@
     padding: 1.2rem;
     background: rgb(218,69,220);
     background: linear-gradient(332deg, rgba(218, 69, 220, 0.080) 0%,
-    rgba(254, 76, 227, 0.080) 0%, rgba(123, 52, 198, 0.080) 100%, rgba(55, 44, 66, 0.08) 100%);
+    rgba(254, 76, 227, 0.080) 0%, rgba(123, 52, 198, 0.080) 100%, rgba(54, 0, 111, 0.080) 100%);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items:center;
 }
 
-.conteudo_login{    
+.conteudo_login{
     position:static;
     display: flex;
     justify-content: center;
@@ -102,4 +102,57 @@
 
 .img_login{
     scale: 0.9;
+}
+
+@media (max-width: 700px){
+  .login_base{
+    /*width: 600px;*/
+  		 display: flex;
+  		 flex-direction: column;
+  		 justify-content: space-around;
+  		 align-items: center;
+  		 height: 800px;
+  }
+		
+		 #Nome {
+		 		 font-size: 45px;
+		 }
+		
+		 #Email, #Senha {
+		 		 width: 350px;
+		 		 height: 40px;
+		 }
+		 .efeito_label_login{
+		 		 width: 4px;
+		 }
+	 	#spn-1, #link_cadastro-1{
+	 			 font-size: 20px;
+	 	}
+}
+
+@media (max-width: 450px){
+    .login_base{
+    /*width: 600px;*/
+  		 display: flex;
+  		 flex-direction: column;
+  		 justify-content: space-around;
+  		 align-items: center;
+  		 height: 800px;
+  }
+		
+		 #Nome {
+		 		 font-size: 45px;
+		 }
+		
+		 #Email, #Senha {
+		 		 width: 350px;
+		 		 height: 40px;
+		 }
+		 .efeito_label_login{
+		 		 width: 4px;
+		 }
+	 	#spn-1, #link_cadastro-1{
+	 			 font-size: 20px;
+	 	}
+}
 }

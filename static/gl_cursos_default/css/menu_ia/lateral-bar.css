@@ -1,0 +1,134 @@
+.nav{
+    width: 25%;
+    max-height: 60%;
+}
+
+.lateral_bar{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #242020;
+    border: 1px solid #8706C5;
+    border-radius: 7px;
+    /*height:100%;    */
+    /* width:25%; */
+    height: 98%;
+
+}
+
+.new-chat a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #C4C4C4;
+}
+
+.new-chat{
+    width: 80%;
+    height: 80px;
+    border-radius: 10px;
+
+    margin: 10px;
+    border: #8706C5 2px solid;
+    background: #5632E6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    
+}
+
+#new-chat{
+    
+}
+
+.user-infos{
+    background: #323232;
+    margin: 5px 5px;
+    width: 85%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.username *{
+    color: #B5B5B5;
+    font-size: 15px;
+}
+
+.logout *{
+    color: #8758F7;
+    text-decoration: none;
+}
+
+#icon-menu img{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+/*responsividade*/
+@media (max-width: 700px){
+    .lateral_bar *{
+        visibility:hidden;
+        /* width: 10%; */
+    }
+    .lateral_bar{
+        width: 30px;
+        
+        background-color: #242020;
+    }
+    
+    .lateral_bar:hover{
+        width: 100px;
+        visibility: visible;
+    }
+
+    .lateral_bar:hover  *{
+        visibility: visible;
+        
+    }
+    .new-chat ,.user-infos{
+        width: 75%;
+    }
+
+    .new-chat *, .user-infos *{
+        text-align: center;
+        
+        font-size: 13px;
+    }
+
+    #icon-menu{
+        align-self:flex-start;
+    				  visibility: visible;
+    }
+
+    #icon-menu:hover{
+        align-self: center;
+    }
+
+    #icon-menu img{
+        visibility: visible;
+    }
+				  .user-infos{
+				  				  padding: 15px;
+				  }
+
+}
+
+@media (max-width: 450px) {
+    #icon-menu{
+        align-self:flex-start;
+    }
+
+    #icon-menu:hover{
+        align-self: center;
+    }
+
+    #icon-menu img{
+        visibility: visible;
+    }
+}

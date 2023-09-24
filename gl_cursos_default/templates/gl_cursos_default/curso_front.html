@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importação ICON e FONTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Phudu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+<link rel="stylesheet" href="{% static 'css/styles_reset.css' %}">
+<link rel="stylesheet" href="{% static 'css/menu_principal/menu/styles_curso.css' %}">
+
+<!-- CSS HEADER -->
+<link rel="stylesheet" href="{% static 'css/menu_principal/header/styles_barra_busca.css' %}">
+<link rel="stylesheet" href="{% static 'css/menu_principal/header/styles_header.css' %}">
+<link rel="stylesheet" href="{% static 'css/menu_principal/header/styles_logotipo.css' %}">
+
+<!-- CSS FOOTER -->
+<link rel="stylesheet" href="{% static 'css/menu_principal/footer/styles_footer.css' %}">
+
+<!-- CSS MENU -->
+<link rel="stylesheet" href="{% static 'css/menu_cursos/styles_menu_curso.css' %}">
+<link rel="stylesheet" href="{% static 'css/menu_cursos/styles_aulas.css' %}">
+
+    <title>Front</title>
+</head>
+<body>
+
+    <header class="menu_header">
+        
+        <div class="menu_header_principal">
+                <a href="../html/menu_principal.html" id="nome_site"><img src="../css/img/Logotipo.png" alt="Logotipo" id="logo"></a>
+            <div class="menu_barra">
+                <div class="barra_busca">
+                    <input type="text" placeholder="Pesquisar" class="input_barra_busca">
+                    <a href="#" class="btn_barra_busca"> 
+                        <img src="../css/img/Lupa.svg" alt="Lupa de Pesquisa" height="20px" width="20px">
+                    </a>
+                </div>
+            </div>
+           
+            <nav class="menu_nav_principal">
+                <a href="#" class="link_nav_principal">Home</a>
+                <a href="#" class="link_nav_principal">Contato</a>
+                <a href="#" class="link_nav_principal">Quem somos?</a>
+            </nav>
+                
+        </div>
+    </header>
+   
+    <main class="menu_curso">
+        
+
+        <section class="aulas_curso">
+            <h1 class="curso_titulo">Curso Iniciando no Front</h1>
+            <div class="aula_card">
+                <h2 class="aula_nome">Aula 1</h2>
+                <p class="aula_descricao">Hoje aprenderemos sobre HTML<span class="icone"><i class='bx bx-chevrons-down'></i></span><p> 
+                
+                <a href="https://www.cursoemvideo.com/curso/html5/" class="aula_link">Acesse a aula agora pelo Link</a>
+            </div>
+
+            <div class="aula_card">
+                <h2 class="aula_nome">Aula 2</h2>
+                <p class="aula_descricao">Hoje aprenderemos sobre HTML Semantico  <span class="icone"><i class='bx bx-chevrons-down'></i></span></p>
+                
+                <a href="https://www.devmedia.com.br/html-semantico-conheca-os-elementos-semanticos-da-html5/38065" class="aula_link">Acesse a aula agora pelo Link</a>
+            </div>
+
+            <div class="aula_card">
+                <h2 class="aula_nome">Aula 3</h2>
+                <p class="aula_descricao">Hoje aprenderemos sobre CSS <span class="icone"><i class='bx bx-chevrons-down'></i></span></p> 
+                
+                <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/" class="aula_link">Acesse a aula agora pelo Link</a>
+            </div>
+
+            <div class="aula_card">
+                <h2 class="aula_nome">Aula 4</h2>
+                <p class="aula_descricao">Hoje aprenderemos sobre JavaScript <span class="icone"><i class='bx bx-chevrons-down'></i></span></p> 
+                
+                <a href="https://www.cursoemvideo.com/curso/javascript/" class="aula_link">Acesse a aula agora pelo Link</a>
+            </div>
+
+            <div class="aula_card">
+                <h2 class="aula_nome">Aula 5</h2>
+                <p class="aula_descricao">Hoje continuaremos as aulas sobre JavaScript <span class="icone"><i class='bx bx-chevrons-down'></i></span></p> 
+                <a href="https://www.cursoemvideo.com/curso/javascript/" class="aula_link">Acesse a aula agora pelo Link</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="menu_footer">
+        <p class="copy">Desenvolvido por Guilherme e Lucas &copy;</p>
+        <a href="../html/curso_front.html" class="retorno"><i class='bx bx-up-arrow-alt'></i></a>
+    </footer>
+    
+</body>
+</html>

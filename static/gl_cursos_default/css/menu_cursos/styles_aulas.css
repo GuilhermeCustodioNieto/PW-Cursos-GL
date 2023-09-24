@@ -1,0 +1,59 @@
+.aulas_curso{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.aula_card{
+    margin: 15px 0;
+}
+
+.aula_nome{
+    color: #e4a1e3;
+    text-shadow: 0 0 10px #653463;
+    font-size: 24px;
+}
+
+.aula_descricao{
+    color: #eee;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.aula_link{
+    color: #eee;
+    text-shadow: 0 0 2px #e4a1e3;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px;
+    margin: 2px;
+    transition: .5s;
+}
+
+.aula_link:hover{
+    color: #eee;
+    text-shadow: 0 0 5px #e4a1e3;
+    text-decoration: underline #6534639a;
+    font-size: 18px;
+}
+
+.icone{
+    color: #eee;
+    text-shadow: 0 0 5px #e4a1e3;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    transition: .5s;
+}
+
+
+.aula_card:hover .icone{
+    transform: translateY(5px);
+}
+
+.img_front-2{
+    height: 800px;
+    width: 100px;
+}

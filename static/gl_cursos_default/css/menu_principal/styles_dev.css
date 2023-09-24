@@ -1,0 +1,193 @@
+#dev{
+    margin: 20px 0 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card_dev{
+    width: 30%;
+    height: 300px;
+    background: rgb(34,34,34);
+    background: linear-gradient(180deg, rgba(34,34,34,.5) 0%, rgba(17,17,17,.5) 100%);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px 0.2px #99999959;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#img_dev{
+    background-image: url("../img/Dev_Guilherme.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);
+    border-radius: 50%;
+    box-shadow: 0 0 2px #999;
+    width: 90px;
+    height: 90px;
+    transition: 1s;
+}
+
+#img_dev-2{
+    background-image: url("../img/Dev_Lucas.jpeg");
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);
+    border-radius: 50%;
+    box-shadow: 0 0 2px #999;
+    width: 90px;
+    height: 90px;
+    transition: 1s;
+}
+
+.card_dev:hover #img_dev {
+    filter: blur(0px);
+    box-shadow: 0 0 10px #999;
+}
+.card_dev:hover #img_dev-2{
+    filter: blur(0px);
+    box-shadow: 0 0 10px #999;
+}
+
+
+/* letras */
+
+.nome_dev{
+    color: #e4a1e3;
+    text-shadow: 0 0 10px #653463;
+    font-size: 16px;
+    margin-top: 10px;
+    letter-spacing: 0.6px;
+}
+
+.dev_letra{
+    color: #eee;
+}
+
+/* lista */ 
+
+.nav_dev{
+    list-style: circle inside #eee;
+    padding: 5px;
+}
+
+/* redes */ 
+
+.redes_dev{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+
+.rede{
+    color: #eee;
+    text-shadow: 0 0 5px #fff;
+    font-size: 40px;
+    text-decoration: none;
+    filter: blur(0.5px);
+    padding: 3px 10px;
+    transition: .7s;
+}
+
+.rede:hover{
+    filter: blur(0px);
+    transform: translateY(-10px);
+    text-shadow: 0 0 10px #e4a1e3;
+}
+
+.portfolio{
+    text-decoration: none;
+    color: #eee;
+    transition: .5s;
+}
+
+.portfolio:hover{
+    text-decoration: underline #653463;
+    text-shadow: 0 0 5px #e4a1e3;
+    transform: translateY(-5px);
+}
+
+@media (max-width: 700px){
+
+    #dev{
+        margin: 20px 0 50px 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+
+    .card_dev{
+        width: 50%;
+        height: 400px;
+        background: rgb(34,34,34);
+        background: linear-gradient(180deg, rgba(34,34,34,.5) 0%, rgba(17,17,17,.5) 100%);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 5px 0.2px #99999959;
+        border-radius: 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 12px 0;
+    }
+    
+}
+
+@media (max-width: 450px){
+
+    #dev{
+        margin: 20px 0 50px 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+
+    .card_dev{
+        width: 70%;
+        height: 350px;
+        background: rgb(34,34,34);
+        background: linear-gradient(180deg, rgba(34,34,34,.5) 0%, rgba(17,17,17,.5) 100%);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 5px 0.2px #99999959;
+        border-radius: 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 12px 0;
+    }
+
+    
+/* letras */
+
+.nome_dev{
+    color: #e4a1e3;
+    text-shadow: 0 0 10px #653463;
+    font-size: 16px;
+    margin-top: 10px;
+    letter-spacing: 0.6px;
+}
+
+.dev_letra{
+    color: #eee;
+}
+
+/* lista */ 
+
+.nav_dev{
+    list-style: circle inside #eee;
+    padding: 5px;
+}
+    
+}
